@@ -1,6 +1,4 @@
 # VeryBigFile
 Tis file very big.
 <br>
-Author-Konitsuga
-Developer
-
+Author-Konitsuga (Developer)
