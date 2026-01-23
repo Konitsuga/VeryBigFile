@@ -21,3 +21,6 @@ def replace_middle_with_n_times_middle(y,n):
     for k in range((middle+1), length):
         l2 = l2 + [l[k]]
     return tuple(l2)
+
+# def Count_Positive_Integers_Ignoring_None(x):
+     
