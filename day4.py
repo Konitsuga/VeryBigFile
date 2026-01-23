@@ -65,3 +65,11 @@ def print_pattern_x(n):
     print(f'{space * n}x')
     for j in range(1, n + 1):
         print(f'{space * (n - j)}{fslash}{space * ((2 * j) - 1)}{bslash}')
+# Check if a Number is Divisible by Exactly One of the Given Numbers
+def divisibility_check(num, y, z):
+    if (((num % y == 0) and (num % z != 0)) or
+        ((num % y != 0) and (num % z == 0))):
+        return True
+    else:
+        return False
+print(divisibility_check(20, 6, 7))
