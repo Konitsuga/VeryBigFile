@@ -55,3 +55,13 @@ def matrix_shape(x, y):
         for k2 in range(length-2):
             l = l + [x[abs(length - k2 -2)][0]]
     return l
+# Print Pattern-X
+def print_pattern_x(n):
+    space = ' '
+    bslash = '\\'
+    fslash = '/'
+    for i in range(n):
+        print(f'{space * i}{bslash}{space * (((n - i) * 2) -1)}{fslash}')
+    print(f'{space * n}x')
+    for j in range(1, n + 1):
+        print(f'{space * (n - j)}{fslash}{space * ((2 * j) - 1)}{bslash}')
