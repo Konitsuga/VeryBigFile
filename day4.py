@@ -29,3 +29,29 @@ def Count_Positive_Integers_Ignoring_None(z):
             if i > 0:
                 count += 1
     return count
+# Matrix Walk
+def matrix_shape(x, y):
+    l = []
+    length = len(x)
+    if y == 'L':
+        for i in range(length):
+            l = l + [x[i][0]]
+        for j in range(1, length):
+            l = l + [x[length-1][j]]
+    elif y == 'Z':
+        for i in range(length):
+            l = l + [x[0][i]]
+        for j in range(length-1):
+            l = l + [x[j+1][abs(j - length+2)]]
+        for k in range(1, length):
+            l = l + [x[length-1][k]]
+    elif y == 'O':
+        for i in range(length-1):
+            l = l + [x[0][i]]
+        for j in range(length):
+            l = l + [x[j][length-1]]
+        for k in range(length-1):
+            l = l + [x[length-1][abs(length - k -2)]]
+        for k2 in range(length-2):
+            l = l + [x[abs(length - k2 -2)][0]]
+    return l
